@@ -6,6 +6,8 @@ Comprehensive knowledge base for [entgo.io](https://entgo.io) - Go's powerful en
 [![Entgo](https://img.shields.io/badge/Entgo-v0.12+-green)](https://entgo.io)
 [![Go](https://img.shields.io/badge/Go-1.20+-00ADD8)](https://golang.org)
 
+[中文](README_CN.md) | **English**
+
 ## Overview
 
 Ent is a powerful entity framework for Go that simplifies building and maintaining applications with large data models. It enables modeling database schemas as graph structures using programmatic Go code and static typing via code generation.
@@ -28,14 +30,24 @@ go install entgo.io/ent/cmd/ent@latest
 
 ### Install as Claude Code Skill
 
-#### Method 1: Clone to Local Skills Directory
+#### Method 1: Using npx (Recommended)
+
+```bash
+# Project-level (recommended)
+npx skills add lwx-cloud/entgo-skills
+
+# Personal-level (all projects)
+npx skills add lwx-cloud/entgo-skills -g
+```
+
+#### Method 2: Clone to Local Skills Directory
 
 ```bash
 # Clone to Claude Code skills directory
 git clone https://github.com/lwx-cloud/entgo-skills.git ~/.claude/skills/entgo-skills
 ```
 
-#### Method 2: Use with Claude Code
+#### Method 3: Use with Claude Code
 
 Add to your Claude Code configuration:
 

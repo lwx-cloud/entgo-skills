@@ -6,6 +6,8 @@
 [![Entgo](https://img.shields.io/badge/Entgo-v0.12+-green)](https://entgo.io)
 [![Go](https://img.shields.io/badge/Go-1.20+-00ADD8)](https://golang.org)
 
+**中文** | [English](README.md)
+
 ## 简介
 
 Ent 是一个强大的 Go 语言实体框架，它简化了构建和维护具有大型数据模型的应用程序。它允许使用编程式 Go 代码和通过代码生成实现的静态类型来建模数据库模式为图结构。
@@ -28,14 +30,24 @@ go install entgo.io/ent/cmd/ent@latest
 
 ### 作为 Claude Code Skill 安装
 
-#### 方式 1: 克隆到本地 Skills 目录
+#### 方式 1: 使用 npx (推荐)
+
+```bash
+# 项目级别 (推荐)
+npx skills add lwx-cloud/entgo-skills
+
+# 个人级别 (所有项目)
+npx skills add lwx-cloud/entgo-skills -g
+```
+
+#### 方式 2: 克隆到本地 Skills 目录
 
 ```bash
 # 克隆到 Claude Code skills 目录
 git clone https://github.com/lwx-cloud/entgo-skills.git ~/.claude/skills/entgo-skills
 ```
 
-#### 方式 2: 在 Claude Code 中使用
+#### 方式 3: 在 Claude Code 中使用
 
 添加到你的 Claude Code 配置:
 
